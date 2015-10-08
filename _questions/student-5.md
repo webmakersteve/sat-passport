@@ -7,4 +7,4 @@ questions:
   - title: "Selective"
   - title: "Less Selective"
 ---
-How competitive are the ADMISSIONS processes at the colleges you're considering?
+How competitive are the **ADMISSIONS** processes at the colleges you're considering?

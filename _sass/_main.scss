@@ -449,9 +449,12 @@ body {
 
     .text {
       position: absolute;
-      bottom: .5em;
+      bottom: 0;
       width: 100%;
-      padding-top: .3em;
+      padding: .3em 0.2em .5em;
+
+      box-sizing: border-box;
+
       font-size: 5em;
       font-weight: 100;
       text-transform: uppercase;

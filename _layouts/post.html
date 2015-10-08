@@ -18,7 +18,7 @@ layout: question
 			<div class="trifold-inner-content">
 
 				{% for question in page.questions %}
-				<a href="#" class="pane {% if forloop.last == true %}last{% endif %}{% if forloop.first == true %}first{% endif %}">
+				<a href="{{page.category}}-{{page.id}}.html" class="pane {% if forloop.last == true %}last{% endif %}{% if forloop.first == true %}first{% endif %}">
 					<div class="inside-pane">
 						<div class="image">
 							<img src="{{ ".png" | prepend: forloop.index | prepend: "-" | prepend: page.id | prepend: "-q" | prepend: page.category | prepend: "/img/icons/questions/" | prepend: site.baseurl }}" class="default" alt="">

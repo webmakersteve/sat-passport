@@ -23,7 +23,10 @@ layout: question
 					href="{{page.category}}-{{page.id}}.html"
 					{% else %}
 					href="{{ "/results.html" | prepend: site.baseurl }}"
-					{% endif %} class="pane {% if forloop.last == true %}last{% endif %}{% if forloop.first == true %}first{% endif %}">
+					{% endif %}
+					class="pane answer-link {% if forloop.last == true %}last{% endif %}{% if forloop.first == true %}first{% endif %}"
+					data-answer-id="{{ forloop.index }}"
+					data-question-id="{{page.id}}">
 					<div class="inside-pane">
 						<div class="image">
 							<img src="{{ ".png" | prepend: forloop.index | prepend: "-" | prepend: page.id | prepend: "-q" | prepend: page.category | prepend: "/img/icons/questions/" | prepend: site.baseurl }}" class="default" alt="">

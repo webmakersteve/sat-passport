@@ -189,7 +189,7 @@ body {
 }
 
 .boxset {
-  padding-top: 12em;
+  padding-top: 8em;
 }
 
 .boxset h3 {
@@ -209,6 +209,11 @@ body {
   border-style: solid;
   background: white;
   padding: 4em 3em;
+}
+
+.boxset .box.unboxed {
+  border-width: 0 !important;
+  padding: 0 !important;
 }
 
 .boxset .box p {
@@ -455,7 +460,7 @@ body {
 
       box-sizing: border-box;
 
-      font-size: 5em;
+      font-size: 3.5em;
       font-weight: 100;
       text-transform: uppercase;
       letter-spacing: 0em;
@@ -468,7 +473,7 @@ body {
 .question-text {
   > * {
     vertical-align: bottom;
-    font-size: 10em;
+    font-size: 6em;
     margin: 0;
     font-weight: 100;
     text-align: center;

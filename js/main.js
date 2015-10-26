@@ -85,7 +85,7 @@ function loadQuizResults() {
 				break;
 		}
 
-		var section = createElement(title, '/img/results/Quiz-Results-Blog-Box-'+ type +'-'+ s +'.png');
+		var section = createElement(title, '/sat-passport/img/results/Quiz-Results-Blog-Box-'+ type +'-'+ s +'.png');
 
 		$('#answers-section').append(section);
 	}

@@ -28,7 +28,8 @@ function markQuizCompleted() {
 }
 
 function createElement(type, image) {
-	var section = $('<section>').addClass('boxset');
+	var id = type.toLowerCase().replace(' ', '');
+	var section = $('<section>').addClass('boxset').attr('id', id);
 	var h3 = $('<h3>').html('<span class="cursive">your</span> ' + type + ' <span class="cursive">results</span>');
 
 	var div = $('<div>').addClass('box').addClass('pink-border').addClass('unboxed');

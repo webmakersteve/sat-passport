@@ -101,3 +101,48 @@ layout: default
 
 </section> <!-- /.boxset -->
 {% endcomment %}
+
+<div class="modal fade" tabindex="-1" role="dialog" id="signup-modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<h4>
+					<img src="{{ '/img/signup-title.png' | prepend: site.baseurl }}" alt="Sign Up &amp; see your results">
+				</h4>
+
+				{% include mailchimp.html %}
+
+				<center>
+					<img src="{{ '/img/logo-modal.png' | prepend: site.baseurl }}">
+				</center>
+
+				<p class="terms">By signing up, I agree with the Privacy Policy and the Terms &amp; Conditions</p>
+			</div>
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="ouibounce-modal" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<h4>
+					<img src="{{ '/img/ouibounce-title.png' | prepend: site.baseurl }}" alt="OK, WE GET IT. You don’t want toregister yet...Stay as our guest!">
+
+					<center>
+						<a class="ouibounce-button big-button" href="javascript:void(0);">View Your Results</a>
+					</center>
+
+					<center>
+						<img src="{{ '/img/logo-modal.png' | prepend: site.baseurl }}">
+					</center>
+
+				</h4>
+			</div>
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

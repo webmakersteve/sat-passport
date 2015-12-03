@@ -11,17 +11,6 @@ $('.answer-link').click(function(e) {
 	console.log(answers);
 
 });
-/*
-<section class="boxset">
-
-	<h3><span class="cursive">your</span> COMPETITIVENESS <span class="cursive">results</span></h3>
-
-	<div class="box pink-border">
-
-	</div>
-
-</section>
-*/
 
 function markQuizCompleted() {
 	store.set('completed', true);
@@ -36,7 +25,6 @@ function createElement(type, image) {
 	var img = $('<img>').attr('src', image);
 
 	div.append(img);
-
 	section.append(h3).append(div);
 
 	return section;
@@ -45,7 +33,7 @@ function createElement(type, image) {
 function loadQuizResults() {
 	var answers = store.get('answers');
 
-	var typeAnswer = answers[0] || 1;
+	var typeAnswer = answers[1] || 1;
 	var type;
 
 	switch (typeAnswer) {
@@ -62,7 +50,7 @@ function loadQuizResults() {
 
 	for (var x in answers) {
 
-		if (x === 0) continue;
+		if (x == 1 || x == 0) continue;
 
 		var answer = answers[x];
 		var s = ( ( x - 2 ) * 3 ) + answer;
@@ -95,4 +83,32 @@ function loadQuizResults() {
 
 if ($('#answers-section')) {
 	loadQuizResults();
+}
+
+// signup-modal
+var modal = document.getElementById('ouibounce-modal');
+
+if (modal) {
+
+	$('#mc-embedded-subscribe-form').on('submit', function() {
+
+		if ($('.mce_inline_error').length > 0) {} else {
+			$('#signup-modal').hide();
+		}
+
+	});
+
+	var _ouibounce = ouibounce(modal, {
+		callback: function() {
+			$('#signup-modal').hide();
+			$('.ouibounce-button').click(function() {
+				_ouibounce.disable();
+				$('#ouibounce-modal').hide();
+			});
+		},
+		aggressive: true
+	});
+
+	//
+
 }

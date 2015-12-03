@@ -90,14 +90,6 @@ var modal = document.getElementById('ouibounce-modal');
 
 if (modal) {
 
-	$('#mc-embedded-subscribe-form').on('submit', function() {
-
-		if ($('.mce_inline_error').length > 0) {} else {
-			$('#signup-modal').hide();
-		}
-
-	});
-
 	var _ouibounce = ouibounce(modal, {
 		callback: function() {
 			$('#signup-modal').hide();
@@ -107,6 +99,15 @@ if (modal) {
 			});
 		},
 		aggressive: true
+	});
+
+	$('#mc-embedded-subscribe-form').on('submit', function() {
+
+		if ($('.mce_inline_error').length > 0) {} else {
+			$('#signup-modal').hide();
+			_ouibounce.disable();
+		}
+
 	});
 
 	//

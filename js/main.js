@@ -41,10 +41,10 @@ function loadQuizResults() {
 			type = 'Students';
 			break;
 		case 2:
-			type = 'Counselors';
+			type = 'Parents';
 			break;
 		case 3:
-			type = 'Parents';
+			type = 'Counselors';
 			break;
 	}
 

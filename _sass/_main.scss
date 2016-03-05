@@ -602,7 +602,12 @@ $swatch-blue: #2a499f;
 
 }
 
+.modal-shown #answers-section {
+  @include blur;
+}
+
 .modal {
+  // @include blur;
   .big-button, #mc_embed_signup .button {
     background-color: #f78e85;
     font-size: 22px;

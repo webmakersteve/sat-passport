@@ -5,6 +5,14 @@
 
 @import "../font/feltthat/stylesheet.css";
 
+@mixin blur($px: 5px) {
+	-webkit-filter: blur($px);
+  -moz-filter: blur($px);
+  -o-filter: blur($px);
+  -ms-filter: blur($px);
+  filter: blur($px);
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",

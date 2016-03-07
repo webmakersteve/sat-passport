@@ -625,3 +625,16 @@ $swatch-blue: #2a499f;
 #ouibounce-modal {
   z-index: 1051;
 }
+
+.students-button {
+  display: none;
+}
+
+.students-results {
+  .parents-button {
+    display: none;
+  }
+  .students-button {
+    display: inline;
+  }
+}

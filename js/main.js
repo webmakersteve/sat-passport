@@ -48,6 +48,8 @@ function loadQuizResults() {
 			break;
 	}
 
+	$('body').addClass(type.toLowerCase() + '-results');
+
 	for (var x in answers) {
 
 		if (x == 1 || x == 0) continue;

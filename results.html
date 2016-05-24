@@ -1,19 +1,48 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<header class="site-header">
-	<img src="{{ "/img/logo.png" | prepend: site.baseurl }}" alt="SAT PASSPORT">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Your awesome title</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/sat-passport/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/sat-passport/results.html">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/sat-passport/feed.xml" />
+
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">
+          stLight.options({publisher:'12345'});
+  </script>
+
+</head>
+
+
+  <body>
+
+		<div class="wrapper">
+			<!--[if lt IE 8]>
+					<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+
+    
+
+    <header class="site-header">
+	<img src="/sat-passport/img/logo.png" alt="SAT PASSPORT">
 </header>
 
 <!--<div class="jumbotron passport">
-	<img src="{{ "/img/passport.png" | prepend: site.baseurl }}" alt="" class="background-image">
+	<img src="/sat-passport/img/passport.png" alt="" class="background-image">
 </div>-->
 
 <main class="main-content">
 
 	<h1 class="text-center">
-		<img src="{{ "/img/welcome.png" | prepend: site.baseurl }}" alt="WELCOME WHERE ARE YOU GOING?">
+		<img src="/sat-passport/img/welcome.png" alt="WELCOME WHERE ARE YOU GOING?">
 	</h1>
 
 	<p class="lead text-center">
@@ -34,7 +63,7 @@ layout: default
 	<div class="icon-row clearfix">
 		<a href="#competitiveness" class="icon pink">
 			<div class="image">
-				<img src="{{ "/img/icons/competitiveness.png" | prepend: site.baseurl }}" alt="Competitiveness">
+				<img src="/sat-passport/img/icons/competitiveness.png" alt="Competitiveness">
 			</div>
 			<span class="label">
 				Competitiveness
@@ -42,7 +71,7 @@ layout: default
 		</a> <!-- /.icon -->
 		<a href="#studyhabits" class="icon teal">
 			<div class="image">
-				<img src="{{ "/img/icons/habits.png" | prepend: site.baseurl }}" alt="Study Habits">
+				<img src="/sat-passport/img/icons/habits.png" alt="Study Habits">
 			</div>
 			<span class="label">
 				Study<br>Habits
@@ -50,7 +79,7 @@ layout: default
 		</a> <!-- /.icon -->
 		<a href="#timeline" class="icon blue">
 			<div class="image">
-				<img src="{{ "/img/icons/timeline.png" | prepend: site.baseurl }}" alt="Timeline">
+				<img src="/sat-passport/img/icons/timeline.png" alt="Timeline">
 			</div>
 			<span class="label">
 				Timeline
@@ -58,7 +87,7 @@ layout: default
 		</a> <!-- /.icon -->
 		<a href="#mindset" class="icon teal">
 			<div class="image">
-				<img src="{{ "/img/icons/mindset.png" | prepend: site.baseurl }}" alt="Mindset">
+				<img src="/sat-passport/img/icons/mindset.png" alt="Mindset">
 			</div>
 			<span class="label">
 				Mindset
@@ -66,7 +95,7 @@ layout: default
 		</a> <!-- /.icon -->
 		<a href="#selectivity" class="icon pink">
 			<div class="image">
-				<img src="{{ "/img/icons/selectivity.png" | prepend: site.baseurl }}" alt="Selectivity">
+				<img src="/sat-passport/img/icons/selectivity.png" alt="Selectivity">
 			</div>
 			<span class="label">
 				Selectivity
@@ -83,47 +112,16 @@ layout: default
 <div style="padding: 40px 0;">
 	<p style="text-align: center;">
 		<a href="#" class="students-button">
-			<img src="{{ "/img/access-the-site.png" | prepend: site.baseurl }}" alt="Access the Site">
+			<img src="/sat-passport/img/access-the-site.png" alt="Access the Site">
 		</a>
 		<a href="#" class="parents-button">
-			<img src="{{ "/img/access-the-site.png" | prepend: site.baseurl }}" alt="Access the Site">
+			<img src="/sat-passport/img/access-the-site.png" alt="Access the Site">
 		</a>
 	</p>
 
 </div>
 
-{% comment %}
-<section class="boxset">
 
-	<h3><span class="cursive">your</span> COMPETITIVENESS <span class="cursive">results</span></h3>
-
-	<div class="box pink-border">
-
-		<div class="inner clearfix">
-
-			<figure class="pull-right">
-				<img src="{{ "/img/boxsets/blackboard.png" | prepend: site.baseurl }}">
-				<figcaption>
-					BLOG: How to Craft a Long-term Study Plan
-				</figcaption>
-			</figure>
-
-			<h4>To the Top</h4>
-
-			<p>
-				We've assembled your unique SAT Passport results so you can see how your personality type lines up with the Redesigned SAT.  Now get out there and explore!
-			</p>
-
-			<p>
-				We've assembled your unique SAT Passport results so you can see how your personality type lines up with the Redesigned SAT.  Now get out there and explore!
-			</p>
-
-		</div> <!-- /.inner -->
-
-	</div> <!-- /.box -->
-
-</section> <!-- /.boxset -->
-{% endcomment %}
 
 <div class="modal fade" tabindex="-1" role="dialog" id="signup-modal">
 	<div class="modal-dialog">
@@ -131,13 +129,69 @@ layout: default
 
 			<div class="modal-body">
 				<h4>
-					<img src="{{ '/img/signup-title.png' | prepend: site.baseurl }}" alt="Sign Up &amp; see your results">
+					<img src="/sat-passport/img/signup-title.png" alt="Sign Up &amp; see your results">
 				</h4>
 
-				{% include mailchimp.html %}
+				<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	#mc_embed_signup .mc-field-group input {
+		background-color: #68c9c9;
+		color: black;
+		border: 0px;
+		padding-top: 22px;
+		font-size: 12px;
+	}
+
+	::-webkit-input-placeholder {
+   color: black;
+	 text-transform: uppercase;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	  color: black;
+		text-transform: uppercase;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	  color: black;
+		text-transform: uppercase;
+	}
+
+	:-ms-input-placeholder {
+	  color: black;
+		text-transform: uppercase;
+	}
+</style>
+<div id="mc_embed_signup">
+<form action="//satpassport.us11.list-manage.com/subscribe/post?u=0a3f55d183864a8577e6dddcb&amp;id=6550bb0dba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" placeholder="Email Address" class="required mc-input email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<input type="text" value="" placeholder="First Name" name="FNAME" class="required mc-input" id="mce-FNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0a3f55d183864a8577e6dddcb_6550bb0dba" tabindex="-1" value=""></div>
+		<center>
+    	<div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button big-button"></div>
+		</center>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
 
 				<center>
-					<img src="{{ '/img/logo-modal.png' | prepend: site.baseurl }}">
+					<img src="/sat-passport/img/logo-modal.png">
 				</center>
 
 				<p class="terms">By signing up, I agree with the Privacy Policy and the Terms &amp; Conditions</p>
@@ -153,14 +207,14 @@ layout: default
 
 			<div class="modal-body">
 				<h4>
-					<img src="{{ '/img/ouibounce-title.png' | prepend: site.baseurl }}" alt="OK, WE GET IT. You don’t want toregister yet...Stay as our guest!">
+					<img src="/sat-passport/img/ouibounce-title.png" alt="OK, WE GET IT. You don’t want toregister yet...Stay as our guest!">
 
 					<center>
 						<a class="ouibounce-button big-button" href="javascript:void(0);">View Your Results</a>
 					</center>
 
 					<center>
-						<img src="{{ '/img/logo-modal.png' | prepend: site.baseurl }}">
+						<img src="/sat-passport/img/logo-modal.png">
 					</center>
 
 				</h4>
@@ -174,3 +228,22 @@ layout: default
 	var body = document.body;
 	body.className = 'modal-shown';
 </script>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="/sat-passport/js/vendor/ouibounce.min.js"></script>
+<script src="/sat-passport/js/vendor/store2.min.js"></script>
+<script src="/sat-passport/js/vendor/pym.min.js"></script>
+
+<script src="/sat-passport/js/main.js"></script>
+
+
+	</div> <!-- /.wrapper -->
+
+  </body>
+
+</html>
